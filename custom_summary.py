@@ -14,11 +14,11 @@ def summary_picker(model, params=[], bse=[], rsquared=False, rsquared_adj=False,
 
   if rsquared:
     string_to_print += "\n"
-    string_to_print += "R-squared --> " + str(rsquared) + "\n"
+    string_to_print += "R-squared --> " + str(model.rsquared) + "\n"
 
   if rsquared_adj:
     string_to_print += "\n"
-    string_to_print += "Adjusted R-squared --> " + str(rsquared_adj) + "\n"
+    string_to_print += "Adjusted R-squared --> " + str(model.rsquared_adj) + "\n"
 
   if pvalues:
     string_to_print += "\n"
